@@ -1,0 +1,1686 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ui version="4.0">
+ <class>MainWindow</class>
+ <widget class="QMainWindow" name="MainWindow">
+  <property name="geometry">
+   <rect>
+    <x>0</x>
+    <y>0</y>
+    <width>550</width>
+    <height>500</height>
+   </rect>
+  </property>
+  <property name="minimumSize">
+   <size>
+    <width>550</width>
+    <height>500</height>
+   </size>
+  </property>
+  <property name="maximumSize">
+   <size>
+    <width>550</width>
+    <height>500</height>
+   </size>
+  </property>
+  <property name="windowTitle">
+   <string>MainWindow</string>
+  </property>
+  <widget class="QWidget" name="centralwidget">
+   <property name="minimumSize">
+    <size>
+     <width>550</width>
+     <height>500</height>
+    </size>
+   </property>
+   <property name="maximumSize">
+    <size>
+     <width>550</width>
+     <height>500</height>
+    </size>
+   </property>
+   <widget class="QTabWidget" name="tabWidget">
+    <property name="geometry">
+     <rect>
+      <x>0</x>
+      <y>0</y>
+      <width>550</width>
+      <height>500</height>
+     </rect>
+    </property>
+    <property name="minimumSize">
+     <size>
+      <width>550</width>
+      <height>500</height>
+     </size>
+    </property>
+    <property name="maximumSize">
+     <size>
+      <width>550</width>
+      <height>500</height>
+     </size>
+    </property>
+    <property name="styleSheet">
+     <string notr="true">QTabWidget {
+    border: none;
+}
+
+QTabWidget::pane {
+    border-top: 43px solid #200e2d;
+    border-radius: 0px;
+    position: absolute;
+    top: -43px;
+    background: rgba( 0, 0, 0, 100% );
+}
+
+QTabWidget::tab-bar {
+    alignment: center;
+}
+
+QTabBar::tab {
+    border: 2px solid #251101;
+    border-radius: 6px;
+    background-color: #3b3561;
+    padding: 4px;
+    color: #ECF0F1;
+    font-weight: bold;
+}
+
+QTabBar::tab:!selected {
+    margin-top: 6px; 
+}</string>
+    </property>
+    <property name="currentIndex">
+     <number>0</number>
+    </property>
+    <property name="iconSize">
+     <size>
+      <width>25</width>
+      <height>25</height>
+     </size>
+    </property>
+    <widget class="QWidget" name="homeTab">
+     <property name="minimumSize">
+      <size>
+       <width>550</width>
+       <height>500</height>
+      </size>
+     </property>
+     <property name="maximumSize">
+      <size>
+       <width>550</width>
+       <height>500</height>
+      </size>
+     </property>
+     <property name="styleSheet">
+      <string notr="true">border: none;
+</string>
+     </property>
+     <attribute name="icon">
+      <iconset>
+       <normaloff>../assets/home.svg</normaloff>../assets/home.svg</iconset>
+     </attribute>
+     <attribute name="title">
+      <string>Home</string>
+     </attribute>
+     <widget class="QWidget" name="libraryWidget" native="true">
+      <property name="geometry">
+       <rect>
+        <x>0</x>
+        <y>0</y>
+        <width>550</width>
+        <height>350</height>
+       </rect>
+      </property>
+      <property name="styleSheet">
+       <string notr="true">#libraryWidget {
+border: none;
+}
+
+QScrollBar {
+    width: 10px;
+    border: none;
+    background-color: #11041A;
+    margin: 0px 0px 0px 0px;
+}
+
+QScrollBar::handle {
+    background: qlineargradient(spread:pad, x1:0.457, y1:0.222, x2:1, y2:1, stop:0 rgba(148, 0, 211, 255), stop:1 rgba(172, 64, 159, 1));
+    border-radius: 0px;
+    min-height: 20px;
+}
+
+QScrollBar::add-page {
+    background-color: #11041A;
+}
+
+QScrollBar::sub-page {
+    background-color: #11041A;
+}
+
+QLabel {
+    background-color: #11041A;
+    color: #ECF0F1;
+    font-size: 20px;
+}</string>
+      </property>
+      <widget class="QScrollArea" name="scrollArea">
+       <property name="geometry">
+        <rect>
+         <x>0</x>
+         <y>-1</y>
+         <width>550</width>
+         <height>351</height>
+        </rect>
+       </property>
+       <property name="verticalScrollBarPolicy">
+        <enum>Qt::ScrollBarAlwaysOff</enum>
+       </property>
+       <property name="horizontalScrollBarPolicy">
+        <enum>Qt::ScrollBarAlwaysOff</enum>
+       </property>
+       <property name="widgetResizable">
+        <bool>true</bool>
+       </property>
+       <widget class="QWidget" name="scrollAreaWidgetContents">
+        <property name="geometry">
+         <rect>
+          <x>0</x>
+          <y>0</y>
+          <width>550</width>
+          <height>351</height>
+         </rect>
+        </property>
+        <widget class="QWidget" name="horizontalLayoutWidget_5">
+         <property name="geometry">
+          <rect>
+           <x>0</x>
+           <y>0</y>
+           <width>551</width>
+           <height>351</height>
+          </rect>
+         </property>
+         <layout class="QHBoxLayout" name="libraryLayout">
+          <property name="spacing">
+           <number>0</number>
+          </property>
+          <item>
+           <widget class="QLabel" name="label">
+            <property name="minimumSize">
+             <size>
+              <width>550</width>
+              <height>350</height>
+             </size>
+            </property>
+            <property name="maximumSize">
+             <size>
+              <width>550</width>
+              <height>400</height>
+             </size>
+            </property>
+            <property name="styleSheet">
+             <string notr="true"/>
+            </property>
+            <property name="text">
+             <string>Click the playlist button to open your music folder</string>
+            </property>
+            <property name="wordWrap">
+             <bool>true</bool>
+            </property>
+           </widget>
+          </item>
+         </layout>
+        </widget>
+       </widget>
+      </widget>
+     </widget>
+     <widget class="QFrame" name="playerActionsFrame">
+      <property name="geometry">
+       <rect>
+        <x>0</x>
+        <y>360</y>
+        <width>551</width>
+        <height>111</height>
+       </rect>
+      </property>
+      <property name="styleSheet">
+       <string notr="true">#playerActionsFrame {
+    background: #200e2d;
+    border: none;
+}
+
+QLabel {
+    color: #ECF0F1;
+}
+
+QPushButton {
+	border: none;
+	background-color: #212121;
+	border-radius: 15px;
+    color: #555555;
+    text-align: centre;
+}
+QPushButton:hover {
+    background: qlineargradient(spread:pad, x1:0.457, y1:0.222, x2:1, y2:1, stop:0 rgba(148, 0, 211, 255), stop:1 rgba(172, 64, 159, 1));
+}
+QPushButton:pressed {
+    background-color: #ECF0F1;
+}
+
+QSlider::sub-page:horizontal {
+    border-radius: 5px;
+    background: qlineargradient(spread:pad, x1:0.457, y1:0.222, x2:1, y2:1, stop:0 rgb(148, 0, 211), stop:1 rgb(172, 64, 159));
+}
+
+QSlider::groove:horizontal {
+    border: 1px solid #bbb;
+    height: 8px;
+    background: qlineargradient(x1: 0, y1: 0, x2: 1, y2: 0,
+                     stop: 0 #ddd, stop: 1 #888);
+    border-radius: 5px;
+}
+
+QSlider::handle:horizontal {
+    background-color: #888;
+    border: 1px solid #555;
+    width: 16px;
+    margin-top: -4px;
+    margin-bottom: -4px;
+    border-radius: 8px;
+}</string>
+      </property>
+      <property name="frameShape">
+       <enum>QFrame::StyledPanel</enum>
+      </property>
+      <property name="frameShadow">
+       <enum>QFrame::Raised</enum>
+      </property>
+      <widget class="QWidget" name="progressWidget" native="true">
+       <property name="geometry">
+        <rect>
+         <x>-1</x>
+         <y>-11</y>
+         <width>550</width>
+         <height>51</height>
+        </rect>
+       </property>
+       <widget class="QWidget" name="horizontalLayoutWidget_2">
+        <property name="geometry">
+         <rect>
+          <x>0</x>
+          <y>20</y>
+          <width>551</width>
+          <height>31</height>
+         </rect>
+        </property>
+        <layout class="QHBoxLayout" name="progressLayout">
+         <property name="spacing">
+          <number>7</number>
+         </property>
+         <property name="leftMargin">
+          <number>3</number>
+         </property>
+         <property name="rightMargin">
+          <number>1</number>
+         </property>
+         <item>
+          <widget class="QLabel" name="startTimeLabel">
+           <property name="maximumSize">
+            <size>
+             <width>30</width>
+             <height>30</height>
+            </size>
+           </property>
+           <property name="text">
+            <string>0:00</string>
+           </property>
+          </widget>
+         </item>
+         <item>
+          <widget class="QSlider" name="progressSlider">
+           <property name="mouseTracking">
+            <bool>false</bool>
+           </property>
+           <property name="tabletTracking">
+            <bool>false</bool>
+           </property>
+           <property name="acceptDrops">
+            <bool>false</bool>
+           </property>
+           <property name="autoFillBackground">
+            <bool>false</bool>
+           </property>
+           <property name="styleSheet">
+            <string notr="true"/>
+           </property>
+           <property name="maximum">
+            <number>100</number>
+           </property>
+           <property name="tracking">
+            <bool>true</bool>
+           </property>
+           <property name="orientation">
+            <enum>Qt::Horizontal</enum>
+           </property>
+          </widget>
+         </item>
+         <item>
+          <widget class="QLabel" name="endTimeLabel">
+           <property name="maximumSize">
+            <size>
+             <width>30</width>
+             <height>30</height>
+            </size>
+           </property>
+           <property name="text">
+            <string>0:00</string>
+           </property>
+          </widget>
+         </item>
+        </layout>
+       </widget>
+      </widget>
+      <widget class="QWidget" name="actionsWidget" native="true">
+       <property name="geometry">
+        <rect>
+         <x>0</x>
+         <y>39</y>
+         <width>550</width>
+         <height>91</height>
+        </rect>
+       </property>
+       <property name="maximumSize">
+        <size>
+         <width>550</width>
+         <height>100</height>
+        </size>
+       </property>
+       <property name="styleSheet">
+        <string notr="true">#mainActionsWidget, #secondaryActionsWidget, #volumeWidget {
+    border: 5px solid #251101;
+    border-radius: 25px;
+    background: #502274;
+}</string>
+       </property>
+       <widget class="QWidget" name="mainActionsWidget" native="true">
+        <property name="geometry">
+         <rect>
+          <x>205</x>
+          <y>-2</y>
+          <width>140</width>
+          <height>50</height>
+         </rect>
+        </property>
+        <property name="styleSheet">
+         <string notr="true"/>
+        </property>
+        <widget class="QWidget" name="horizontalLayoutWidget">
+         <property name="geometry">
+          <rect>
+           <x>0</x>
+           <y>0</y>
+           <width>141</width>
+           <height>51</height>
+          </rect>
+         </property>
+         <layout class="QHBoxLayout" name="mainActionsLayout">
+          <property name="spacing">
+           <number>0</number>
+          </property>
+          <property name="leftMargin">
+           <number>0</number>
+          </property>
+          <property name="rightMargin">
+           <number>0</number>
+          </property>
+          <item>
+           <widget class="QPushButton" name="previousBtn">
+            <property name="maximumSize">
+             <size>
+              <width>30</width>
+              <height>30</height>
+             </size>
+            </property>
+            <property name="toolTip">
+             <string/>
+            </property>
+            <property name="whatsThis">
+             <string/>
+            </property>
+            <property name="styleSheet">
+             <string notr="true">padding-right: 3px
+</string>
+            </property>
+            <property name="text">
+             <string/>
+            </property>
+            <property name="icon">
+             <iconset>
+              <normaloff>../../assets/previous.svg</normaloff>../../assets/previous.svg</iconset>
+            </property>
+            <property name="iconSize">
+             <size>
+              <width>20</width>
+              <height>20</height>
+             </size>
+            </property>
+           </widget>
+          </item>
+          <item>
+           <widget class="QPushButton" name="playPauseBtn">
+            <property name="minimumSize">
+             <size>
+              <width>0</width>
+              <height>0</height>
+             </size>
+            </property>
+            <property name="maximumSize">
+             <size>
+              <width>30</width>
+              <height>30</height>
+             </size>
+            </property>
+            <property name="toolTip">
+             <string/>
+            </property>
+            <property name="toolTipDuration">
+             <number>-1</number>
+            </property>
+            <property name="statusTip">
+             <string notr="true"/>
+            </property>
+            <property name="whatsThis">
+             <string notr="true"/>
+            </property>
+            <property name="styleSheet">
+             <string notr="true">padding-left: 4px
+</string>
+            </property>
+            <property name="text">
+             <string/>
+            </property>
+            <property name="icon">
+             <iconset>
+              <normaloff>../../assets/play.svg</normaloff>../../assets/play.svg</iconset>
+            </property>
+            <property name="iconSize">
+             <size>
+              <width>20</width>
+              <height>20</height>
+             </size>
+            </property>
+           </widget>
+          </item>
+          <item>
+           <widget class="QPushButton" name="nextBtn">
+            <property name="maximumSize">
+             <size>
+              <width>30</width>
+              <height>30</height>
+             </size>
+            </property>
+            <property name="toolTip">
+             <string/>
+            </property>
+            <property name="whatsThis">
+             <string/>
+            </property>
+            <property name="styleSheet">
+             <string notr="true">padding-left: 3px
+</string>
+            </property>
+            <property name="text">
+             <string/>
+            </property>
+            <property name="icon">
+             <iconset>
+              <normaloff>../../assets/next.svg</normaloff>../../assets/next.svg</iconset>
+            </property>
+            <property name="iconSize">
+             <size>
+              <width>20</width>
+              <height>20</height>
+             </size>
+            </property>
+           </widget>
+          </item>
+         </layout>
+        </widget>
+       </widget>
+       <widget class="QWidget" name="volumeWidget" native="true">
+        <property name="geometry">
+         <rect>
+          <x>0</x>
+          <y>-2</y>
+          <width>180</width>
+          <height>50</height>
+         </rect>
+        </property>
+        <widget class="QWidget" name="horizontalLayoutWidget_3">
+         <property name="geometry">
+          <rect>
+           <x>10</x>
+           <y>0</y>
+           <width>121</width>
+           <height>51</height>
+          </rect>
+         </property>
+         <layout class="QHBoxLayout" name="volumeLayout">
+          <property name="spacing">
+           <number>2</number>
+          </property>
+          <property name="leftMargin">
+           <number>0</number>
+          </property>
+          <property name="rightMargin">
+           <number>0</number>
+          </property>
+          <item>
+           <widget class="QPushButton" name="volumeBtn">
+            <property name="minimumSize">
+             <size>
+              <width>30</width>
+              <height>30</height>
+             </size>
+            </property>
+            <property name="maximumSize">
+             <size>
+              <width>30</width>
+              <height>30</height>
+             </size>
+            </property>
+            <property name="toolTip">
+             <string/>
+            </property>
+            <property name="whatsThis">
+             <string/>
+            </property>
+            <property name="text">
+             <string/>
+            </property>
+            <property name="icon">
+             <iconset>
+              <normaloff>../../assets/volumeOn.svg</normaloff>../../assets/volumeOn.svg</iconset>
+            </property>
+            <property name="iconSize">
+             <size>
+              <width>20</width>
+              <height>20</height>
+             </size>
+            </property>
+           </widget>
+          </item>
+          <item>
+           <widget class="QSlider" name="volumeSlider">
+            <property name="maximum">
+             <number>100</number>
+            </property>
+            <property name="orientation">
+             <enum>Qt::Horizontal</enum>
+            </property>
+           </widget>
+          </item>
+         </layout>
+        </widget>
+        <widget class="QLabel" name="volumeLabel">
+         <property name="geometry">
+          <rect>
+           <x>133</x>
+           <y>10</y>
+           <width>40</width>
+           <height>30</height>
+          </rect>
+         </property>
+         <property name="maximumSize">
+          <size>
+           <width>40</width>
+           <height>30</height>
+          </size>
+         </property>
+         <property name="styleSheet">
+          <string notr="true"/>
+         </property>
+         <property name="text">
+          <string>100%</string>
+         </property>
+        </widget>
+       </widget>
+       <widget class="QWidget" name="secondaryActionsWidget" native="true">
+        <property name="geometry">
+         <rect>
+          <x>370</x>
+          <y>-2</y>
+          <width>180</width>
+          <height>50</height>
+         </rect>
+        </property>
+        <widget class="QWidget" name="horizontalLayoutWidget_4">
+         <property name="geometry">
+          <rect>
+           <x>0</x>
+           <y>0</y>
+           <width>181</width>
+           <height>51</height>
+          </rect>
+         </property>
+         <layout class="QHBoxLayout" name="secondaryActionsLayout">
+          <property name="spacing">
+           <number>0</number>
+          </property>
+          <item>
+           <widget class="QPushButton" name="repeatBtn">
+            <property name="maximumSize">
+             <size>
+              <width>30</width>
+              <height>30</height>
+             </size>
+            </property>
+            <property name="whatsThis">
+             <string/>
+            </property>
+            <property name="styleSheet">
+             <string notr="true"/>
+            </property>
+            <property name="text">
+             <string/>
+            </property>
+            <property name="icon">
+             <iconset>
+              <normaloff>../../assets/repeat.svg</normaloff>../../assets/repeat.svg</iconset>
+            </property>
+            <property name="iconSize">
+             <size>
+              <width>25</width>
+              <height>25</height>
+             </size>
+            </property>
+            <property name="checkable">
+             <bool>true</bool>
+            </property>
+           </widget>
+          </item>
+          <item>
+           <widget class="QPushButton" name="shuffleBtn">
+            <property name="maximumSize">
+             <size>
+              <width>30</width>
+              <height>30</height>
+             </size>
+            </property>
+            <property name="whatsThis">
+             <string/>
+            </property>
+            <property name="styleSheet">
+             <string notr="true">padding-left: 2px;</string>
+            </property>
+            <property name="text">
+             <string/>
+            </property>
+            <property name="icon">
+             <iconset>
+              <normaloff>../../assets/shuffle.svg</normaloff>../../assets/shuffle.svg</iconset>
+            </property>
+            <property name="iconSize">
+             <size>
+              <width>24</width>
+              <height>24</height>
+             </size>
+            </property>
+            <property name="checkable">
+             <bool>true</bool>
+            </property>
+           </widget>
+          </item>
+          <item>
+           <widget class="QPushButton" name="playlistDirectoryBtn">
+            <property name="maximumSize">
+             <size>
+              <width>30</width>
+              <height>30</height>
+             </size>
+            </property>
+            <property name="whatsThis">
+             <string/>
+            </property>
+            <property name="text">
+             <string/>
+            </property>
+            <property name="icon">
+             <iconset>
+              <normaloff>../../assets/playlist.svg</normaloff>../../assets/playlist.svg</iconset>
+            </property>
+            <property name="iconSize">
+             <size>
+              <width>25</width>
+              <height>25</height>
+             </size>
+            </property>
+           </widget>
+          </item>
+         </layout>
+        </widget>
+       </widget>
+      </widget>
+     </widget>
+     <widget class="QWidget" name="songNameWidget" native="true">
+      <property name="geometry">
+       <rect>
+        <x>0</x>
+        <y>349</y>
+        <width>550</width>
+        <height>21</height>
+       </rect>
+      </property>
+      <property name="styleSheet">
+       <string notr="true">#songNameWidget {
+    border: 2px solid #251101;
+    border-radius: 10px;
+    background: #502274;
+}</string>
+      </property>
+      <widget class="QLabel" name="songNameLabel">
+       <property name="geometry">
+        <rect>
+         <x>0</x>
+         <y>0</y>
+         <width>551</width>
+         <height>20</height>
+        </rect>
+       </property>
+       <property name="styleSheet">
+        <string notr="true">color: #ECF0F1;
+font-weight: bold;
+</string>
+       </property>
+       <property name="text">
+        <string>The song name will be here</string>
+       </property>
+       <property name="alignment">
+        <set>Qt::AlignCenter</set>
+       </property>
+      </widget>
+     </widget>
+    </widget>
+    <widget class="QWidget" name="settingsTab">
+     <attribute name="icon">
+      <iconset>
+       <normaloff>../assets/settings.svg</normaloff>../assets/settings.svg</iconset>
+     </attribute>
+     <attribute name="title">
+      <string>Settings</string>
+     </attribute>
+     <widget class="QWidget" name="mainSettingsWidget" native="true">
+      <property name="geometry">
+       <rect>
+        <x>0</x>
+        <y>0</y>
+        <width>551</width>
+        <height>471</height>
+       </rect>
+      </property>
+      <property name="styleSheet">
+       <string notr="true">#mainSettingsWidget {
+    background-color: #110e1a;
+}
+
+QLabel {
+    color: #ECF0F1;
+}
+</string>
+      </property>
+      <widget class="QFrame" name="mainSettingsFrame">
+       <property name="geometry">
+        <rect>
+         <x>70</x>
+         <y>39</y>
+         <width>410</width>
+         <height>390</height>
+        </rect>
+       </property>
+       <property name="maximumSize">
+        <size>
+         <width>800</width>
+         <height>800</height>
+        </size>
+       </property>
+       <property name="styleSheet">
+        <string notr="true">#mainSettingsFrame {
+    border: 3px solid #6320EE;
+    border-radius: 18px;
+}
+
+#titleFrame_1, #titleFrame_2, #titleFrame_3 {
+    border: 3px solid #251101;
+    border-radius: 15px;
+    background-color: #502274;
+}
+
+#descriptionWidget_1, #descriptionWidget_2, #descriptionWidget_3,
+#checkBoxWidget_1, #checkBoxWidget_2, #sliderWidget{
+    background-color: #3b3561;
+    border-radius: 15px;
+}</string>
+       </property>
+       <property name="frameShape">
+        <enum>QFrame::StyledPanel</enum>
+       </property>
+       <property name="frameShadow">
+        <enum>QFrame::Raised</enum>
+       </property>
+       <widget class="QFrame" name="settingsFrame_1">
+        <property name="geometry">
+         <rect>
+          <x>0</x>
+          <y>0</y>
+          <width>411</width>
+          <height>131</height>
+         </rect>
+        </property>
+        <property name="styleSheet">
+         <string notr="true">#settingsFrame_1 {
+    border: 0px solid #6320EE;
+    border-top-left-radius: 18px;
+    border-top-right-radius: 18px;
+}</string>
+        </property>
+        <property name="frameShape">
+         <enum>QFrame::StyledPanel</enum>
+        </property>
+        <property name="frameShadow">
+         <enum>QFrame::Raised</enum>
+        </property>
+        <widget class="QWidget" name="descriptionWidget_1" native="true">
+         <property name="geometry">
+          <rect>
+           <x>10</x>
+           <y>50</y>
+           <width>180</width>
+           <height>70</height>
+          </rect>
+         </property>
+         <property name="maximumSize">
+          <size>
+           <width>210</width>
+           <height>70</height>
+          </size>
+         </property>
+         <widget class="QLabel" name="descriptionLabel_1">
+          <property name="geometry">
+           <rect>
+            <x>10</x>
+            <y>10</y>
+            <width>161</width>
+            <height>51</height>
+           </rect>
+          </property>
+          <property name="styleSheet">
+           <string notr="true">font-size: 12px;
+</string>
+          </property>
+          <property name="text">
+           <string>Enabling this option allows the player to save your playlist when you exit.</string>
+          </property>
+          <property name="wordWrap">
+           <bool>true</bool>
+          </property>
+         </widget>
+        </widget>
+        <widget class="QFrame" name="titleFrame_1">
+         <property name="geometry">
+          <rect>
+           <x>9</x>
+           <y>10</y>
+           <width>390</width>
+           <height>31</height>
+          </rect>
+         </property>
+         <property name="frameShape">
+          <enum>QFrame::StyledPanel</enum>
+         </property>
+         <property name="frameShadow">
+          <enum>QFrame::Raised</enum>
+         </property>
+         <widget class="QLabel" name="titleLabel_1">
+          <property name="geometry">
+           <rect>
+            <x>0</x>
+            <y>0</y>
+            <width>391</width>
+            <height>31</height>
+           </rect>
+          </property>
+          <property name="maximumSize">
+           <size>
+            <width>500</width>
+            <height>130</height>
+           </size>
+          </property>
+          <property name="styleSheet">
+           <string notr="true">font-size: 16px;
+font-weight:bold;
+
+</string>
+          </property>
+          <property name="text">
+           <string>Save playlist</string>
+          </property>
+          <property name="alignment">
+           <set>Qt::AlignCenter</set>
+          </property>
+          <property name="wordWrap">
+           <bool>true</bool>
+          </property>
+         </widget>
+        </widget>
+        <widget class="QWidget" name="checkBoxWidget_1" native="true">
+         <property name="geometry">
+          <rect>
+           <x>219</x>
+           <y>50</y>
+           <width>180</width>
+           <height>70</height>
+          </rect>
+         </property>
+         <widget class="QWidget" name="horizontalLayoutWidget_6">
+          <property name="geometry">
+           <rect>
+            <x>10</x>
+            <y>10</y>
+            <width>161</width>
+            <height>51</height>
+           </rect>
+          </property>
+          <layout class="QHBoxLayout" name="playlistLayout"/>
+         </widget>
+        </widget>
+       </widget>
+       <widget class="QFrame" name="settingsFrame_2">
+        <property name="geometry">
+         <rect>
+          <x>-1</x>
+          <y>129</y>
+          <width>411</width>
+          <height>131</height>
+         </rect>
+        </property>
+        <property name="styleSheet">
+         <string notr="true">#settingsFrame_2 {
+border: 2px solid #6320EE;
+}</string>
+        </property>
+        <property name="frameShape">
+         <enum>QFrame::StyledPanel</enum>
+        </property>
+        <property name="frameShadow">
+         <enum>QFrame::Raised</enum>
+        </property>
+        <widget class="QFrame" name="titleFrame_2">
+         <property name="geometry">
+          <rect>
+           <x>9</x>
+           <y>10</y>
+           <width>391</width>
+           <height>31</height>
+          </rect>
+         </property>
+         <property name="frameShape">
+          <enum>QFrame::StyledPanel</enum>
+         </property>
+         <property name="frameShadow">
+          <enum>QFrame::Raised</enum>
+         </property>
+         <widget class="QLabel" name="titleLabel_2">
+          <property name="geometry">
+           <rect>
+            <x>-3</x>
+            <y>0</y>
+            <width>391</width>
+            <height>31</height>
+           </rect>
+          </property>
+          <property name="styleSheet">
+           <string notr="true">font-size: 16px;
+font-weight: bold;
+</string>
+          </property>
+          <property name="text">
+           <string>Fade out</string>
+          </property>
+          <property name="alignment">
+           <set>Qt::AlignCenter</set>
+          </property>
+         </widget>
+        </widget>
+        <widget class="QWidget" name="descriptionWidget_2" native="true">
+         <property name="geometry">
+          <rect>
+           <x>10</x>
+           <y>50</y>
+           <width>180</width>
+           <height>70</height>
+          </rect>
+         </property>
+         <property name="maximumSize">
+          <size>
+           <width>210</width>
+           <height>70</height>
+          </size>
+         </property>
+         <widget class="QLabel" name="descriptionLabel_2">
+          <property name="geometry">
+           <rect>
+            <x>10</x>
+            <y>0</y>
+            <width>171</width>
+            <height>71</height>
+           </rect>
+          </property>
+          <property name="maximumSize">
+           <size>
+            <width>210</width>
+            <height>90</height>
+           </size>
+          </property>
+          <property name="styleSheet">
+           <string notr="true">font-size: 12px;
+</string>
+          </property>
+          <property name="text">
+           <string>This setting adds a smooth fade out effect when music playback finishes. </string>
+          </property>
+          <property name="wordWrap">
+           <bool>true</bool>
+          </property>
+         </widget>
+        </widget>
+        <widget class="QWidget" name="checkBoxWidget_2" native="true">
+         <property name="geometry">
+          <rect>
+           <x>220</x>
+           <y>50</y>
+           <width>180</width>
+           <height>70</height>
+          </rect>
+         </property>
+         <widget class="QWidget" name="horizontalLayoutWidget_7">
+          <property name="geometry">
+           <rect>
+            <x>10</x>
+            <y>10</y>
+            <width>161</width>
+            <height>51</height>
+           </rect>
+          </property>
+          <layout class="QHBoxLayout" name="fadeoutLayout"/>
+         </widget>
+        </widget>
+       </widget>
+       <widget class="QFrame" name="settingsFrame_3">
+        <property name="geometry">
+         <rect>
+          <x>-1</x>
+          <y>259</y>
+          <width>411</width>
+          <height>131</height>
+         </rect>
+        </property>
+        <property name="styleSheet">
+         <string notr="true">#settingsFrame_3 {
+    border: 0px solid #6320EE;
+    border-bottom-left-radius: 18px;
+    border-bottom-right-radius: 18px;
+}</string>
+        </property>
+        <property name="frameShape">
+         <enum>QFrame::StyledPanel</enum>
+        </property>
+        <property name="frameShadow">
+         <enum>QFrame::Raised</enum>
+        </property>
+        <widget class="QFrame" name="titleFrame_3">
+         <property name="geometry">
+          <rect>
+           <x>10</x>
+           <y>10</y>
+           <width>391</width>
+           <height>31</height>
+          </rect>
+         </property>
+         <property name="frameShape">
+          <enum>QFrame::StyledPanel</enum>
+         </property>
+         <property name="frameShadow">
+          <enum>QFrame::Raised</enum>
+         </property>
+         <widget class="QLabel" name="titleLabel_3">
+          <property name="geometry">
+           <rect>
+            <x>-3</x>
+            <y>-1</y>
+            <width>391</width>
+            <height>31</height>
+           </rect>
+          </property>
+          <property name="styleSheet">
+           <string notr="true">font-size: 16px;
+font-weight: bold;
+</string>
+          </property>
+          <property name="text">
+           <string>Adjust  fade out</string>
+          </property>
+          <property name="alignment">
+           <set>Qt::AlignCenter</set>
+          </property>
+         </widget>
+        </widget>
+        <widget class="QWidget" name="descriptionWidget_3" native="true">
+         <property name="geometry">
+          <rect>
+           <x>10</x>
+           <y>50</y>
+           <width>180</width>
+           <height>70</height>
+          </rect>
+         </property>
+         <property name="maximumSize">
+          <size>
+           <width>210</width>
+           <height>70</height>
+          </size>
+         </property>
+         <widget class="QLabel" name="descriptionLabel_3">
+          <property name="geometry">
+           <rect>
+            <x>10</x>
+            <y>-10</y>
+            <width>161</width>
+            <height>90</height>
+           </rect>
+          </property>
+          <property name="maximumSize">
+           <size>
+            <width>210</width>
+            <height>90</height>
+           </size>
+          </property>
+          <property name="styleSheet">
+           <string notr="true">font-size: 12px;
+</string>
+          </property>
+          <property name="text">
+           <string>Set how long the music fades out when playback finishes. For this setting, you need to enable fade out.</string>
+          </property>
+          <property name="wordWrap">
+           <bool>true</bool>
+          </property>
+         </widget>
+        </widget>
+        <widget class="QWidget" name="sliderWidget" native="true">
+         <property name="geometry">
+          <rect>
+           <x>220</x>
+           <y>50</y>
+           <width>180</width>
+           <height>70</height>
+          </rect>
+         </property>
+         <widget class="QWidget" name="horizontalLayoutWidget_8">
+          <property name="geometry">
+           <rect>
+            <x>9</x>
+            <y>20</y>
+            <width>121</width>
+            <height>31</height>
+           </rect>
+          </property>
+          <layout class="QHBoxLayout" name="fadeoutSliderLayout">
+           <item>
+            <widget class="QSlider" name="fadeoutSlider">
+             <property name="styleSheet">
+              <string notr="true">QSlider::sub-page:horizontal {
+    border-radius: 5px;
+    background: qlineargradient(spread:pad, x1:0.457, y1:0.222, x2:1, y2:1, stop:0 rgb(148, 0, 211), stop:1 rgb(172, 64, 159));
+}
+
+QSlider::groove:horizontal {
+    border: 1px solid #bbb;
+    height: 8px;
+    background: qlineargradient(x1: 0, y1: 0, x2: 1, y2: 0,
+                     stop: 0 #ddd, stop: 1 #888);
+    border-radius: 5px;
+}
+
+QSlider::handle:horizontal {
+    background-color: #888;
+    border: 1px solid #555;
+    width: 16px;
+    margin-top: -4px;
+    margin-bottom: -4px;
+    border-radius: 8px;
+}</string>
+             </property>
+             <property name="minimum">
+              <number>0</number>
+             </property>
+             <property name="maximum">
+              <number>10</number>
+             </property>
+             <property name="pageStep">
+              <number>2</number>
+             </property>
+             <property name="tracking">
+              <bool>true</bool>
+             </property>
+             <property name="orientation">
+              <enum>Qt::Horizontal</enum>
+             </property>
+             <property name="invertedAppearance">
+              <bool>false</bool>
+             </property>
+             <property name="invertedControls">
+              <bool>false</bool>
+             </property>
+             <property name="tickPosition">
+              <enum>QSlider::NoTicks</enum>
+             </property>
+             <property name="tickInterval">
+              <number>1</number>
+             </property>
+            </widget>
+           </item>
+          </layout>
+         </widget>
+         <widget class="QLabel" name="fadeoutLabel">
+          <property name="geometry">
+           <rect>
+            <x>133</x>
+            <y>25</y>
+            <width>51</width>
+            <height>20</height>
+           </rect>
+          </property>
+          <property name="text">
+           <string>0 sec</string>
+          </property>
+         </widget>
+        </widget>
+       </widget>
+      </widget>
+     </widget>
+    </widget>
+    <widget class="QWidget" name="aboutTab">
+     <attribute name="icon">
+      <iconset>
+       <normaloff>../assets/about.svg</normaloff>../assets/about.svg</iconset>
+     </attribute>
+     <attribute name="title">
+      <string>About</string>
+     </attribute>
+     <widget class="QWidget" name="mainAboutWidget" native="true">
+      <property name="geometry">
+       <rect>
+        <x>0</x>
+        <y>0</y>
+        <width>551</width>
+        <height>471</height>
+       </rect>
+      </property>
+      <property name="styleSheet">
+       <string notr="true">#mainAboutWidget {
+    background-color: #11041a;
+}
+
+QLabel {
+    color: #ECF0F1;
+}
+</string>
+      </property>
+      <widget class="QFrame" name="mainAboutFrame">
+       <property name="geometry">
+        <rect>
+         <x>70</x>
+         <y>39</y>
+         <width>410</width>
+         <height>390</height>
+        </rect>
+       </property>
+       <property name="styleSheet">
+        <string notr="true">#mainAboutFrame {
+    border: 3px solid #6320EE;
+    border-radius: 18px;
+}
+
+#titleLabel_4, #titleLabel_5 {
+    font-size: 16px;
+    font-weight: bold;
+}
+
+#titleFrame_4, #titleFrame_5 {
+    border: 3px solid #251101;
+    border-radius: 15px;
+    background-color: #502274;
+}
+
+#aboutPlayerWidget, #aboutPlayerWidget_2 {
+    background-color: #3b3561;
+    border-radius: 15px;
+}
+
+#pyside6Widget, #pygameWidget, #mutagenWidget {
+    background-color: #3b3561;
+    border-radius: 20px;
+}
+
+#mutagenBtn, #pygameBtn, #pyside6Btn {
+    border-style: none;
+    background-color: transparent;
+    color: #ECF0F1;
+    font-size: 18px;
+}</string>
+       </property>
+       <property name="frameShape">
+        <enum>QFrame::StyledPanel</enum>
+       </property>
+       <property name="frameShadow">
+        <enum>QFrame::Raised</enum>
+       </property>
+       <widget class="QFrame" name="titleFrame_4">
+        <property name="geometry">
+         <rect>
+          <x>9</x>
+          <y>10</y>
+          <width>390</width>
+          <height>31</height>
+         </rect>
+        </property>
+        <property name="styleSheet">
+         <string notr="true">#titleFrame {
+border: 3px solid #251101;
+border-radius: 15px;
+background-color: #502274;
+}</string>
+        </property>
+        <property name="frameShape">
+         <enum>QFrame::StyledPanel</enum>
+        </property>
+        <property name="frameShadow">
+         <enum>QFrame::Raised</enum>
+        </property>
+        <widget class="QLabel" name="titleLabel_4">
+         <property name="geometry">
+          <rect>
+           <x>130</x>
+           <y>-1</y>
+           <width>131</width>
+           <height>30</height>
+          </rect>
+         </property>
+         <property name="styleSheet">
+          <string notr="true"/>
+         </property>
+         <property name="text">
+          <string>RhythmRider</string>
+         </property>
+         <property name="alignment">
+          <set>Qt::AlignCenter</set>
+         </property>
+        </widget>
+       </widget>
+       <widget class="QWidget" name="aboutPlayerWidget" native="true">
+        <property name="geometry">
+         <rect>
+          <x>10</x>
+          <y>59</y>
+          <width>281</width>
+          <height>110</height>
+         </rect>
+        </property>
+        <property name="styleSheet">
+         <string notr="true"/>
+        </property>
+        <widget class="QLabel" name="aboutPlayerLabel">
+         <property name="geometry">
+          <rect>
+           <x>10</x>
+           <y>0</y>
+           <width>271</width>
+           <height>111</height>
+          </rect>
+         </property>
+         <property name="styleSheet">
+          <string notr="true">font-size: 18px;</string>
+         </property>
+         <property name="text">
+          <string>The convenient and simple player for enjoying your favorite songs and artists.</string>
+         </property>
+         <property name="wordWrap">
+          <bool>true</bool>
+         </property>
+        </widget>
+       </widget>
+       <widget class="QFrame" name="titleFrame_5">
+        <property name="geometry">
+         <rect>
+          <x>10</x>
+          <y>190</y>
+          <width>390</width>
+          <height>30</height>
+         </rect>
+        </property>
+        <property name="styleSheet">
+         <string notr="true"/>
+        </property>
+        <property name="frameShape">
+         <enum>QFrame::StyledPanel</enum>
+        </property>
+        <property name="frameShadow">
+         <enum>QFrame::Raised</enum>
+        </property>
+        <widget class="QLabel" name="titleLabel_5">
+         <property name="geometry">
+          <rect>
+           <x>130</x>
+           <y>-1</y>
+           <width>141</width>
+           <height>30</height>
+          </rect>
+         </property>
+         <property name="styleSheet">
+          <string notr="true"/>
+         </property>
+         <property name="text">
+          <string>Used libraries</string>
+         </property>
+         <property name="alignment">
+          <set>Qt::AlignCenter</set>
+         </property>
+        </widget>
+       </widget>
+       <widget class="QWidget" name="pyside6Widget" native="true">
+        <property name="geometry">
+         <rect>
+          <x>9</x>
+          <y>240</y>
+          <width>390</width>
+          <height>40</height>
+         </rect>
+        </property>
+        <property name="styleSheet">
+         <string notr="true"/>
+        </property>
+        <widget class="QPushButton" name="pyside6Btn">
+         <property name="geometry">
+          <rect>
+           <x>160</x>
+           <y>10</y>
+           <width>70</width>
+           <height>20</height>
+          </rect>
+         </property>
+         <property name="cursor">
+          <cursorShape>PointingHandCursor</cursorShape>
+         </property>
+         <property name="mouseTracking">
+          <bool>true</bool>
+         </property>
+         <property name="whatsThis">
+          <string>About Qt</string>
+         </property>
+         <property name="styleSheet">
+          <string notr="true"/>
+         </property>
+         <property name="text">
+          <string>PySide6</string>
+         </property>
+        </widget>
+       </widget>
+       <widget class="QWidget" name="pygameWidget" native="true">
+        <property name="geometry">
+         <rect>
+          <x>9</x>
+          <y>290</y>
+          <width>390</width>
+          <height>40</height>
+         </rect>
+        </property>
+        <property name="styleSheet">
+         <string notr="true"/>
+        </property>
+        <widget class="QPushButton" name="pygameBtn">
+         <property name="geometry">
+          <rect>
+           <x>160</x>
+           <y>10</y>
+           <width>70</width>
+           <height>20</height>
+          </rect>
+         </property>
+         <property name="cursor">
+          <cursorShape>PointingHandCursor</cursorShape>
+         </property>
+         <property name="mouseTracking">
+          <bool>true</bool>
+         </property>
+         <property name="whatsThis">
+          <string>https://www.pygame.org/</string>
+         </property>
+         <property name="styleSheet">
+          <string notr="true"/>
+         </property>
+         <property name="text">
+          <string>pygame</string>
+         </property>
+        </widget>
+       </widget>
+       <widget class="QWidget" name="mutagenWidget" native="true">
+        <property name="geometry">
+         <rect>
+          <x>9</x>
+          <y>340</y>
+          <width>390</width>
+          <height>40</height>
+         </rect>
+        </property>
+        <property name="styleSheet">
+         <string notr="true"/>
+        </property>
+        <widget class="QPushButton" name="mutagenBtn">
+         <property name="geometry">
+          <rect>
+           <x>155</x>
+           <y>10</y>
+           <width>80</width>
+           <height>20</height>
+          </rect>
+         </property>
+         <property name="cursor">
+          <cursorShape>PointingHandCursor</cursorShape>
+         </property>
+         <property name="mouseTracking">
+          <bool>true</bool>
+         </property>
+         <property name="whatsThis">
+          <string>https://mutagen.readthedocs.io/en/latest/</string>
+         </property>
+         <property name="styleSheet">
+          <string notr="true"/>
+         </property>
+         <property name="text">
+          <string>mutagen</string>
+         </property>
+        </widget>
+       </widget>
+       <widget class="QWidget" name="aboutPlayerWidget_2" native="true">
+        <property name="geometry">
+         <rect>
+          <x>315</x>
+          <y>80</y>
+          <width>70</width>
+          <height>70</height>
+         </rect>
+        </property>
+        <property name="styleSheet">
+         <string notr="true"/>
+        </property>
+        <widget class="QPushButton" name="githubBtn">
+         <property name="geometry">
+          <rect>
+           <x>15</x>
+           <y>15</y>
+           <width>40</width>
+           <height>40</height>
+          </rect>
+         </property>
+         <property name="toolTip">
+          <string>https://github.com/RomaP13/RhythmRider</string>
+         </property>
+         <property name="toolTipDuration">
+          <number>2</number>
+         </property>
+         <property name="statusTip">
+          <string>https://github.com/RomaP13/RhythmRider</string>
+         </property>
+         <property name="whatsThis">
+          <string>https://github.com</string>
+         </property>
+         <property name="styleSheet">
+          <string notr="true">QPushButton {
+	border: none;
+	background-color: #212121;
+	border-radius: 10px;
+    color: #555555;
+    text-align: centre;
+
+}
+QPushButton:hover {
+    background: qlineargradient(spread:pad, x1:0.457, y1:0.222, x2:1, y2:1, stop:0 rgba(148, 0, 211, 255), stop:1 rgba(172, 64, 159, 1));
+}
+QPushButton:pressed {
+    background-color: #ECF0F1;
+}
+</string>
+         </property>
+         <property name="text">
+          <string/>
+         </property>
+         <property name="icon">
+          <iconset>
+           <normaloff>../../assets/github.svg</normaloff>../../assets/github.svg</iconset>
+         </property>
+         <property name="iconSize">
+          <size>
+           <width>33</width>
+           <height>33</height>
+          </size>
+         </property>
+        </widget>
+       </widget>
+      </widget>
+     </widget>
+    </widget>
+   </widget>
+  </widget>
+ </widget>
+ <resources/>
+ <connections/>
+</ui>
