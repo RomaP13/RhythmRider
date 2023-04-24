@@ -21,6 +21,3 @@ To run the application, execute the main.py file in the project directory.
 python main.py
 ```
 This will launch the application.
-
-## License
-This project is licensed under the MIT License. See the LICENSE file for details.
