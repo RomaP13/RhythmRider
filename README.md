@@ -18,6 +18,6 @@ python -m pip install -r requirements.txt
 ## Usage
 To run the application, execute the main.py file in the project directory.
 ```
-python main.py
+python start.py
 ```
 This will launch the application.
