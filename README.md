@@ -16,7 +16,7 @@ python -m pip install -r requirements.txt
 ```
 
 ## Usage
-To run the application, execute the main.py file in the project directory.
+To run the application, execute the start.py file in the project directory.
 ```
 python start.py
 ```
