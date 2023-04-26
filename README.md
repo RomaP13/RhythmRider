@@ -1,6 +1,8 @@
 # RhythmRider
 The convenient and easy-to-use music player for listening to your favorite songs and artists, made with the PySide6, pygame, and mutagen libraries.
 
+![app-preview](app-preview.png)
+
 ## Requirements
 This project depends on three libraries: 
 + [`PySide6`](https://doc.qt.io/qtforpython-6/index.html)
