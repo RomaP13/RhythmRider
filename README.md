@@ -26,3 +26,4 @@ This will launch the application.
 
 ## License
 [MIT](https://choosealicense.com/licenses/mit/)
+
