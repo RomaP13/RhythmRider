@@ -117,7 +117,7 @@ QTabBar::tab:!selected {
      </property>
      <attribute name="icon">
       <iconset>
-       <normaloff>../assets/home.svg</normaloff>../assets/home.svg</iconset>
+       <normaloff>../../music_player/assets/home.svg</normaloff>../../music_player/assets/home.svg</iconset>
      </attribute>
      <attribute name="title">
       <string>Home</string>
@@ -195,8 +195,8 @@ QLabel {
           <rect>
            <x>0</x>
            <y>0</y>
-           <width>551</width>
-           <height>351</height>
+           <width>552</width>
+           <height>352</height>
           </rect>
          </property>
          <layout class="QHBoxLayout" name="libraryLayout">
@@ -489,7 +489,7 @@ QSlider::handle:horizontal {
              <string notr="true"/>
             </property>
             <property name="whatsThis">
-             <string notr="true"/>
+             <string/>
             </property>
             <property name="styleSheet">
              <string notr="true">padding-left: 4px
@@ -803,7 +803,7 @@ font-weight: bold;
     <widget class="QWidget" name="settingsTab">
      <attribute name="icon">
       <iconset>
-       <normaloff>../assets/settings.svg</normaloff>../assets/settings.svg</iconset>
+       <normaloff>../../music_player/assets/settings.svg</normaloff>../../music_player/assets/settings.svg</iconset>
      </attribute>
      <attribute name="title">
       <string>Settings</string>
@@ -1311,7 +1311,7 @@ QSlider::handle:horizontal {
     <widget class="QWidget" name="aboutTab">
      <attribute name="icon">
       <iconset>
-       <normaloff>../assets/about.svg</normaloff>../assets/about.svg</iconset>
+       <normaloff>../../music_player/assets/about.svg</normaloff>../../music_player/assets/about.svg</iconset>
      </attribute>
      <attribute name="title">
       <string>About</string>
@@ -1523,8 +1523,11 @@ background-color: #502274;
          <property name="mouseTracking">
           <bool>true</bool>
          </property>
-         <property name="whatsThis">
+         <property name="toolTip">
           <string>About Qt</string>
+         </property>
+         <property name="whatsThis">
+          <string/>
          </property>
          <property name="styleSheet">
           <string notr="true"/>
@@ -1561,8 +1564,11 @@ background-color: #502274;
          <property name="mouseTracking">
           <bool>true</bool>
          </property>
-         <property name="whatsThis">
+         <property name="toolTip">
           <string>https://www.pygame.org/</string>
+         </property>
+         <property name="whatsThis">
+          <string/>
          </property>
          <property name="styleSheet">
           <string notr="true"/>
@@ -1599,8 +1605,11 @@ background-color: #502274;
          <property name="mouseTracking">
           <bool>true</bool>
          </property>
-         <property name="whatsThis">
+         <property name="toolTip">
           <string>https://mutagen.readthedocs.io/en/latest/</string>
+         </property>
+         <property name="whatsThis">
+          <string/>
          </property>
          <property name="styleSheet">
           <string notr="true"/>
@@ -1635,13 +1644,13 @@ background-color: #502274;
           <string>https://github.com/RomaP13/RhythmRider</string>
          </property>
          <property name="toolTipDuration">
-          <number>2</number>
+          <number>-1</number>
          </property>
          <property name="statusTip">
-          <string>https://github.com/RomaP13/RhythmRider</string>
+          <string/>
          </property>
          <property name="whatsThis">
-          <string>https://github.com</string>
+          <string/>
          </property>
          <property name="styleSheet">
           <string notr="true">QPushButton {
