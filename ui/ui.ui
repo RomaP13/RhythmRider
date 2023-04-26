@@ -90,7 +90,7 @@ QTabBar::tab:!selected {
 }</string>
     </property>
     <property name="currentIndex">
-     <number>0</number>
+     <number>1</number>
     </property>
     <property name="iconSize">
      <size>
@@ -1451,7 +1451,7 @@ background-color: #502274;
           <string notr="true">font-size: 18px;</string>
          </property>
          <property name="text">
-          <string>The convenient and simple player for enjoying your favorite songs and artists.</string>
+          <string>The convenient and easy-to-use music player for listening to your favorite songs and artists.</string>
          </property>
          <property name="wordWrap">
           <bool>true</bool>
