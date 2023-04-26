@@ -21,3 +21,6 @@ To run the application, execute the start.py file in the project directory.
 python start.py
 ```
 This will launch the application.
+
+## License
+[MIT](https://choosealicense.com/licenses/mit/)
