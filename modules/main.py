@@ -4,8 +4,8 @@ import random
 from math import ceil
 from mutagen.mp3 import MP3
 from PySide6.QtCore import Qt, QSettings, QUrl
-from PySide6.QtGui import QIcon, QDesktopServices, QPixmap
-from PySide6.QtWidgets import QFileDialog, QMainWindow, QMessageBox, QLabel
+from PySide6.QtGui import QIcon, QDesktopServices
+from PySide6.QtWidgets import QFileDialog, QMainWindow, QMessageBox
 from modules.styles import on_button_style, off_button_style
 from modules.player import Ui_MainWindow
 from modules.thread import PlayerThread
@@ -37,7 +37,6 @@ class Player(QMainWindow, Ui_MainWindow):
         self.add_widgets()
         self.set_initial_state()
         self.set_signals()
-        #self.set_buttons_icons()
         self.load_last_played_song()
         self.toggle_playlist()
 
@@ -165,35 +164,6 @@ class Player(QMainWindow, Ui_MainWindow):
             "https://www.pygame.org/"))
         self.mutagenBtn.clicked.connect(lambda: self.open_url(
             "https://mutagen.readthedocs.io/en/latest/"))
-
-    def set_buttons_icons(self):
-        icon = QIcon("assets/play.svg")
-        icon.pixmap(40, 40)
-        self.playPauseBtn.setIcon(icon)
-
-        icon = QIcon("assets/next.svg")
-        icon.pixmap(40, 40)
-        self.nextBtn.setIcon(icon)
-
-        icon = QIcon("assets/previous.svg")
-        icon.pixmap(40, 40)
-        self.previousBtn.setIcon(icon)
-
-        icon = QIcon("assets/playlist.svg")
-        icon.pixmap(40, 40)
-        self.playlistDirectoryBtn.setIcon(icon)
-
-        icon = QIcon("assets/repeat.svg")
-        icon.pixmap(40, 40)
-        self.repeatBtn.setIcon(icon)
-
-        icon = QIcon("assets/shuffle.svg")
-        icon.pixmap(40, 40)
-        self.shuffleBtn.setIcon(icon)
-
-        icon = QIcon("assets/volumeOn.svg")
-        icon.pixmap(40, 40)
-        self.volumeBtn.setIcon(icon)
 
     def set_fadeout_slider_value(self, value: int):
         self.fadeoutLabel.setText(f"{value} sec")
